@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>LXYL Probability</title>
+		<meta charset="utf-8">
+<!--  		<meta name="viewport" content="width=device-width, initial-scale=1">    -->
+		<link href="final.css" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="logo.png">
+	</head>
+	
+	<body>
+		<header>
+		  <h1 class="invisible">Probability</h1>
+		</header>
+		
+		<nav>
+			<ul class="compSize">
+			  <li class="logo"><a href="index.html"><img src="logo.png" alt="LXYL Logo" width="90" height="60"></a></li>
+			  <li class="home"><a href="index.html">Math</a></li>
+			  <li class="rightSide"><a href="contactInfo.html">Contact Info</a></li>
+			  <li class="rightSide"><a href="probability.html">Probability</a></li>
+			  <li class="rightSide"><a href="counting.html">Counting</a></li>
+			  <li class="rightSide"><a href="numTheory.html">Number Theory</a></li>
+			  <li class="rightSide"><a href="geometry.html">Geometry</a></li>
+			  <li class="rightSide"><a href="index.html">Home</a></li>
+			</ul>
+			
+			<ul class="phoneSize">
+				<li class="logo"><a href="index.html"><img src="logo.png" alt="LXYL Logo" width="90" height="60"></a></li>
+				<li class="home"><a href="index.html">Math</a></li>
+			</ul>
+			<div class="phoneSize">
+				<div class="phoneColumn">
+					<span class="rightSide"><a href="index.html">Home</a></span>
+					<span class="rightSide"><a href="geometry.html">Geometry</a></span>
+				</div>
+				<div class="phoneColumn">
+					<span class="rightSide"><a href="numTheory.html">Number Theory</a></span>
+					<span class="rightSide"><a href="counting.html">Counting</a></span>
+				</div>
+				<div class="phoneColumn">
+					<span class="rightSide"><a href="probability.html">Probability</a></span>
+					<span class="rightSide"><a href="contactInfo.html">Contact Info</a></span>
+				</div>
+			</div>	
+		</nav>
+			
+		<div class="titleProbability">
+			<h1>Probability</h1>
+		</div>
+		
+		<div class="section">
+			<div class="sideNav">
+				<h3>CONTENTS</h3>
+				<ul>
+				  <li><a href="#overview">Overview</a></li>
+				  <!--
+				  <li><a href="#vocab">Vocab, Theorems, Formulas</a></li>
+				  -->
+				  <li><a href="#problems">Problems</a></li>
+				  <li><a href="#solutions">Solutions</a></li>
+				  <!--
+				  <li><a href="#resources">Additional Resources</a></li>
+				  -->
+				  <li><a href="#sources">Sources</a></li>
+				</ul>
+			</div>
+			
+			<div class="content">
+				<h2 id="overview">OVERVIEW</h2>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Probability is the branch of mathematics concerned with quantifying the likelihood of an event occurring. 
+				In short, probability attempts to make sense of the uncertainty and randomness inherent to the world we live 
+				in by providing a systematic way to measure the chance of various outcomes. In the real world, our brains 
+				regularly use probability in attempts at making more informed and strategic decisions that optimize outcomes 
+				in various aspects of life and work. However, probability often doesn’t reach the same conclusions we might 
+				expect. Did you know that there is more than a 50% probability that at least one pair of individuals in a group 
+				of 23 individuals will share the same birthday?</p>
+				
+				<div class="overviewList">
+					<div class="overviewRow">
+						<div class="overviewCell">
+							<h4>List of probability topics:</h4>
+							<ul>
+								<li>Theoretical probability</li>
+								<li>Empirical probability</li>
+								<li>Subjective probability</li>
+								<li>Discrete probability</li>
+								<li>Continuous probability</li>
+							</ul>
+						</div>
+						
+						<div class="overviewCell">
+							<h4>List of probability applications:</h4>
+							<ul>
+								<li>Game theory</li>
+								<li>Risk assessment</li>
+								<li>Weather forecasting</li>
+								<li>Quality control</li>
+								<li>Medical diagnosis</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<!--  
+				<h2 id="vocab">VOCAB, THEOREMS, FORMULAS</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+				aliqua. Odio euismod lacinia at quis risus sed vulputate odio. A diam sollicitudin tempor id eu nisl nunc mi. Faucibus 
+				ornare suspendisse sed nisi lacus. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Arcu non sodales 
+				neque sodales ut etiam sit amet nisl. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. 
+				Rhoncus mattis rhoncus urna neque viverra justo nec ultrices.</p>
+				-->
+				
+				<h2 id="problems">PROBLEMS</h2>
+				<ol>				
+					<li>Jerry starts at 0 on the real number line. He tosses a fair coin 8 times. When he gets 
+					heads, he moves 1 unit in the positive direction; when he gets tails, he moves 1 unit in the 
+					negative direction. The probability that he reaches 4 at some time during this process is
+					<span class="math">a / b </span> where <span class="math">a</span> and <span class="math">b</span> 
+					are relatively prime positive integers. What is <span class="math">a + b</span>?(For example, 
+					he succeeds if his sequence of tosses is <span class="math">HTHHHHHH</span>) (AMC 12A 2016 Problem 19)</li>
+					
+					<li>Three numbers in the interval [0, 1] are chosen independently and at random. What is the probability 
+					that the chosen numbers are the side lengths of a triangle with positive area?(AMC 12A 2015 Problem 19)</li>										
+				</ol>
+				
+				<h2 id="solutions">SOLUTIONS</h2>
+				<ol>				
+					<li>First, split all of the possible sequences into different cases depending on the number of heads flipped.
+					<br><br>
+					First case – 6, 7, or 8 heads. For any sequence that has 6, 7, or 8 heads, Jerry will always reach 4 at 
+					some point. There is a total of 8 choose 6 ( (8*7)/(2*1) ) sequences of 8 flips given that there are 
+					6 heads, 8 choose 8 ( (8)/(1) ) sequences of 8 flips given that there are 8 heads, and 8 choose 8 ( (8)/(8) ) 
+					sequences of 8 flips given that there are 8 heads. In total, there are (8*7)/(2*1) + (8)/(1) + (8)/(8) = 
+					28 + 8 + 1 = 37 sequences in this case.
+					<br><br>
+					Second case – 5 heads. For any sequence that has 5 heads, either the first 4 rolls have to be consecutive heads 
+					or the first 6 rolls have to contain 5 heads and 1 tail. For the first condition, there are a total of 4 choose 1 
+					( (4)/(1) ) sequences. For the second condition, there are 6 choose 1 ( (6)/(1) ) sequences. However, 2 cases overlap 
+					(HHHHHTTT and HHHHTHTT) so we need to subtract them. In total, there are (4)/(1) + (6)/(1) - 2 = 4 + 6 - 2 = 8 
+					sequences in this case.
+					<br><br>
+					Third case – 4 heads. For any sequence that has 4 heads, the first 4 rolls have to be consecutive heads. 
+					There is 1 sequence that fits this case (HHHHTTTT).
+					<br><br>
+					Fourth case – less than 4 heads. For any sequence that has less than 4 heads, there is no sequence that will 
+					allow Jerry to reach 4.
+					<br><br>
+					Overall, there are 37 + 8 + 1 = 46 sequences where Jerry can reach 4 at some point in the processes. In total, 
+					there are 2^8 = 256 sequences because there are 2 possibilities (H or T) for each of the 8 rolls. Thus, 
+					the probability of Jerry reaching 4 is 46/256 = 23/128. Add 23 and 128 to get 151.</li>
+					
+					<li>For a triangle to be formed, the side lengths must follow the inequality <span class="math">a + b > c</span> 
+					where <span class="math">a, b</span>, and <span class="math">c</span> are any side lengths of the triangle. 
+					Once a valid triangle is formed, the triangle will definitely have a positive area. One way to look at this 
+					problem is through the perspective of a graph. WLOG, let one side length equal <span class="math">x</span>, 
+					one side length equal <span class="math">y</span>, and the longest side length equal <span class="math">a</span>. 
+					Using the graph below, any coordinate (<span class="math">x, y</span>) above the line 
+					<span class="math">x + y = a</span> fits the inequality <span class="math">x + y > a</span>. The probability 
+					that a coordinate (<span class="math">x, y</span>) is above the line <span class="math">x + y = a</span> 
+					using the area of the shaded triangle compared to the unit square is 1/2.
+					<img src="probGraph.png" alt="Probability Graph" width="275" height="300" class="centerdE"></li>										
+				</ol>
+				
+				<!-- 
+				<h2 id="resources">ADDITIONAL RESOURCES</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+				aliqua. Odio euismod lacinia at quis risus sed vulputate odio. A diam sollicitudin tempor id eu nisl nunc mi. Faucibus 
+				ornare suspendisse sed nisi lacus. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Arcu non sodales 
+				neque sodales ut etiam sit amet nisl. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. 
+				Rhoncus mattis rhoncus urna neque viverra justo nec ultrices.</p>
+				<br><br>
+				-->
+				
+				<h2 id="sources">SOURCES</h2>
+				<p class="sources">Mathematical Association of America. “Art of Problem Solving.” Art of Problem Solving, 
+				<a href="https://artofproblemsolving.com/wiki/index.php/2016_AMC_12A_Problems">https://artofproblemsolving.com/wiki/index.php/2016_AMC_12A_Problems</a>. Accessed 10 July 2023.</p>
+				<p class="sources">
+				Mathematical Association of America. “Art of Problem Solving.” Art of Problem Solving, 
+				<a href="https://artofproblemsolving.com/wiki/index.php/2016_AMC_12B_Problems">https://artofproblemsolving.com/wiki/index.php/2016_AMC_12B_Problems</a>. Accessed 10 July 2023.</p>
+				<p class="sources">
+				“Probability - Formula, Calculating, Find, Theorems, Examples.” Cuemath, <a href="www.cuemath.com/data/probability/">www.cuemath.com/data/probability/</a>. 
+				Accessed 29 July 2023.</p>
+				<p class="sources">
+				Siegmund, David O. “Probability Theory.” Encyclopædia Britannica, 13 June 2023, 
+				<a href="www.britannica.com/science/probability-theory">www.britannica.com/science/probability-theory</a>.</p>
+				
+			</div>
+		</div>
+		
+		<footer>
+		  Copyright &copy; 2023 University of Cincinnati, IT2040 <br>
+			<a href="mailto:liu2l8@mail.uc.edu">liu2l8@mail.uc.edu</a>
+		</footer>
+	
+	</body>
+</html>

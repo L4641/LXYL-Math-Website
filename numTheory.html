@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>LXYL Number Theory</title>
+		<meta charset="utf-8">
+<!--  		<meta name="viewport" content="width=device-width, initial-scale=1">    -->
+		<link href="final.css" rel="stylesheet">
+		<link rel="icon" type="image/x-icon" href="logo.png">
+	</head>
+	
+	<body>
+		<header>
+		  <h1 class="invisible">Number Theory</h1>
+		</header>
+		
+		<nav>
+			<ul class="compSize">
+			  <li class="logo"><a href="index.html"><img src="logo.png" alt="LXYL Logo" width="90" height="60"></a></li>
+			  <li class="home"><a href="index.html">Math</a></li>
+			  <li class="rightSide"><a href="contactInfo.html">Contact Info</a></li>
+			  <li class="rightSide"><a href="probability.html">Probability</a></li>
+			  <li class="rightSide"><a href="counting.html">Counting</a></li>
+			  <li class="rightSide"><a href="numTheory.html">Number Theory</a></li>
+			  <li class="rightSide"><a href="geometry.html">Geometry</a></li>
+			  <li class="rightSide"><a href="index.html">Home</a></li>
+			</ul>
+			
+			<ul class="phoneSize">
+				<li class="logo"><a href="index.html"><img src="logo.png" alt="LXYL Logo" width="90" height="60"></a></li>
+				<li class="home"><a href="index.html">Math</a></li>
+			</ul>
+			<div class="phoneSize">
+				<div class="phoneColumn">
+					<span class="rightSide"><a href="index.html">Home</a></span>
+					<span class="rightSide"><a href="geometry.html">Geometry</a></span>
+				</div>
+				<div class="phoneColumn">
+					<span class="rightSide"><a href="numTheory.html">Number Theory</a></span>
+					<span class="rightSide"><a href="counting.html">Counting</a></span>
+				</div>
+				<div class="phoneColumn">
+					<span class="rightSide"><a href="probability.html">Probability</a></span>
+					<span class="rightSide"><a href="contactInfo.html">Contact Info</a></span>
+				</div>
+			</div>	
+		</nav>
+			
+		<div class="titleNumTheory">
+			<h1>Number <br> Theory</h1>
+		</div>
+		
+		<div class="section">
+			<div class="sideNav">
+				<h3>CONTENTS</h3>
+				<ul>
+				  <li><a href="#overview">Overview</a></li>
+				  <!--
+				  <li><a href="#vocab">Vocab, Theorems, Formulas</a></li>
+				  -->
+				  <li><a href="#problems">Problems</a></li>
+				  <li><a href="#solutions">Solutions</a></li>
+				  <!--
+				  <li><a href="#resources">Additional Resources</a></li>
+				  -->
+				  <li><a href="#sources">Sources</a></li>
+				</ul>
+			</div>
+			
+			<div class="content">
+				<h2 id="overview">OVERVIEW</h2>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Number theory is the branch of mathematics focused on the study of the properties and relationships 
+				of integers. German mathematician Carl Friedrich Gauss, arguably the greatest number theories of 
+				all time, once stated “Mathematics is the queen of the sciences and number theory is the queen of 
+				mathematics.” Number theory is primarily the study of integers, but also delves into rational, real, 
+				complex, and other number systems. Within number theory, there are countless intriguing and seemingly 
+				simple problems that remain unsolved to this day. For example, the Riemann Hypothesis, which involves 
+				the distribution of prime numbers and states that all nontrivial zeros of the zeta function have a 
+				real part of ½. </p>
+				
+				<div class="overviewList">
+					<div class="overviewRow">
+						<div class="overviewCell">
+							<h4>List of number theory topics:</h4>
+							<ul>
+								<li>Divisibility</li>
+								<li>Prime numbers</li>
+								<li>Number sequences</li>
+								<li>Irrational numbers</li>
+								<li>Quadratic forms</li>
+							</ul>
+						</div>
+						
+						<div class="overviewCell">
+							<h4>List of number theory applications:</h4>
+							<ul>
+								<li>Cryptography</li>
+								<li>Computer science</li>
+								<li>Blockchain</li>
+								<li>Communications</li>
+								<li>Physics</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				
+				<!--  
+				<h2 id="vocab">VOCAB, THEOREMS, FORMULAS</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+				aliqua. Odio euismod lacinia at quis risus sed vulputate odio. A diam sollicitudin tempor id eu nisl nunc mi. Faucibus 
+				ornare suspendisse sed nisi lacus. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Arcu non sodales 
+				neque sodales ut etiam sit amet nisl. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. 
+				Rhoncus mattis rhoncus urna neque viverra justo nec ultrices.</p>
+				-->
+				
+				<h2 id="problems">PROBLEMS</h2>
+				<ol>
+					<li>For some positive integer <span class="math">n</span> the number 110<span class="math">n</span>^3
+					has 110 positive integer divisors, including and the number 110<span class="math">n</span>^3 How many 
+					positive integer divisors does the number 81<span class="math">n</span>^4 have? (AMC 12A 2016 Problem 18)</li>
+					
+					<li>There are exactly 77,000 ordered quadruplets (<span class="math">a, b, c, d</span>) such that 
+					gcd(<span class="math">a, b, c, d</span>) = 77 and lcd(<span class="math">a, b, c, d</span>) = <span class="math">n</span>. 
+					What is the smallest possible value for <span class="math">n</span>? (AMC 12B 2016 Problem 24)</li>
+				</ol>
+				
+				<h2 id="solutions">SOLUTIONS</h2>
+				<ol>
+					<li>The prime factorization of 110 is 2×5×11. The goal is for the prime factorization of 110
+					<span class="math">n</span>^3 to equal <span class="math">a</span>^1×<span class="math">b</span>^4
+					×<span class="math">c</span>^10 since then the number of integer divisors would be 2×5×11=110. To get 
+					this prime factorization, we can (WLOG) let <span class="math">a</span> = 2, <span class="math">b</span>
+					 = 5, and <span class="math">c</span> = 11. This means to get the prime factorization we want, we need 
+					 <span class="math">n</span>^3 to equal 5^3×11^9 so <span class="math">n</span>=5×11^3. Plug this into 
+					 the second equation and we get the prime factorization 3^4×5^4×11^12 which has 5×5×13=325 factors.</li>
+					
+					<li>Let <span class="math">A</span> = <span class="math">a</span>/77 , <span class="math">B</span> = 
+					<span class="math">b</span>/77 , etc. because the greatest common denominator of <span class="math">a, b, c,</span> 
+					and <span class="math">d</span> is 77 so <span class="math">a, b, c</span>, and <span class="math">d</span> 
+					are all divisible by 77. Then for the prime power <span class="math">p^r</span> of <span class="math">N</span> 
+					= <span class="math">n</span>/77, either <span class="math">A, B, C</span>, or <span class="math">D</span> 
+					has to have <span class="math">p^r</span> in its prime factorization, either <span class="math">A, B, C</span>, 
+					or <span class="math">D</span> has to include <span class="math">p</span>^0 in its prime factorization, and 
+					the rest has to have <span class="math">p^k</span> where 0 ≤ <span class="math">k</span> ≤ <span class="math">r</span> 
+					in its prime factorization. If none of <span class="math">A, B, C</span>, or <span class="math">D</span> have 
+					<span class="math">p^r</span> in its prime factorization, then the least common denominator (<span class="math">n</span>) 
+					wouldn’t have the factor <span class="math">p^r</span>. If none of <span class="math">A, B, C</span>, and 
+					<span class="math">D</span> have <span class="math">p</span>^0 in its prime factorization, then their greatest 
+					common factor wouldn’t be 1 (because the original greatest common factor of <span class="math">a, b, c</span>, and 
+					<span class="math">d</span> was 77 but we divided each number by 77 so the greatest common factor of 
+					<span class="math">A, B, C</span>, and <span class="math">D</span> is 1).
+					<br><br>
+					For each <span class="math">p^r</span>, there is a set number of ways to order the quadruplets 
+					(<span class="math">k∨1, k∨2, k∨3, k∨4</span>) where 0 ≤ <span class="math">k∨i</span> ≤ <span class="math">r</span>, 
+					the largest value of the four is equal to <span class="math">r</span>, and the smallest value of the four is equal 
+					to 0. Let that number equal <span class="math">f(r)</span>. Then, the total amount of ordered quadruplets 
+					(<span class="math">a, b, c, d</span>) would be equal to <span class="math">f(r∨2 )f(r∨3 )f(r∨5 )</span>… 
+					The numbers 2, 3, and 5 are used in the equation since they are all prime numbers. 
+					<br><br>
+					<span class="math">f(r)</span> is equal to the number of ways to order the quadruplets if there are only 2 different 
+					values (0 and <span class="math">r</span>), 3 different values, or 4 different values. For the case where there are 
+					only 2 different values, there are 14 ways to order the quadruplets. For the case where there are 3 different values, 
+					there are (4×3×2×1)/2 ways to order 4 different numbers with 1 repeated number, 3 ways to choose which number is repeated, 
+					and (<span class="math">r</span> - 1) ways to choose the number that isn’t 0 or <span class="math">r</span>. Multiply 
+					the three together to get 36(<span class="math">r</span> - 1). For the case with 4 different numbers, there are 
+					4×3×2×1 ways to order 4 different numbers with 0 repeats and (<span class="math">r</span> - 1)(<span class="math">r</span> - 2) 
+					ways to choose the last two numbers out of four that aren’t <span class="math">r</span> or 0. Multiply the two together 
+					to get 24(<span class="math">r</span> - 1)(<span class="math">r</span> - 2). Add all of the cases together to get: 
+					<span class="math">f(r) = 14 + 36(r - 1) + 24(r - 1)(r - 2)</span>
+					<br><br>
+					Plugging in a few numbers for <span class="math">r</span>, the results are: 14, 50, 110, 194, …
+					<br><br>
+					The total amount of ordered quadruplets (<span class="math">a, b, c, d</span>) (equal to <span class="math">f(r∨2 )f(r∨3 )f(r∨5 )</span>… ) 
+					is equal to 77,000. 77,000 is equal to 14×50×110, so <span class="math">f(1)f(2)f(3)</span>=7,000 with 1, 2, and 3 as 
+					the exponents of prime numbers. Thus, to get the smallest <span class="math">n</span> value, assign the largest exponent 
+					values to the smallest prime. As a result, <span class="math">N</span> = 〖2〗^3×3^2×5^1 and <span class="math">n</span> 
+					= <span class="math">N</span> ×77 = 27720.</li>
+				</ol>
+				
+				<!-- 
+				<h2 id="resources">ADDITIONAL RESOURCES</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+				aliqua. Odio euismod lacinia at quis risus sed vulputate odio. A diam sollicitudin tempor id eu nisl nunc mi. Faucibus 
+				ornare suspendisse sed nisi lacus. Velit aliquet sagittis id consectetur purus ut faucibus pulvinar. Arcu non sodales 
+				neque sodales ut etiam sit amet nisl. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. 
+				Rhoncus mattis rhoncus urna neque viverra justo nec ultrices.</p>
+				<br><br>
+				-->
+				
+				<h2 id="sources">SOURCES</h2>
+				<p class="sources">Hosch, William L. “Riemann Hypothesis.” Encyclopædia Britannica, 24 June 
+				2023, <a href="www.britannica.com/science/Riemann-hypothesis">www.britannica.com/science/Riemann-hypothesis</a>. Accessed 12 July 2023.</p>
+				<p class="sources">Long, Calvin T. Elementary Introduction to Number Theory. 2nd ed., D.C. Heath and 
+				Company, 1972. Accessed 12 July 2023.</p>
+				<p class="sources">Mathematical Association of America. “Art of Problem Solving.” Art of Problem Solving, 
+				<a href="https://artofproblemsolving.com/wiki/index.php/2016_AMC_12A_Problems">https://artofproblemsolving.com/wiki/index.php/2016_AMC_12A_Problems</a>. Accessed 10 July 2023.</p>
+				<p class="sources">
+				Mathematical Association of America. “Art of Problem Solving.” Art of Problem Solving, 
+				<a href="https://artofproblemsolving.com/wiki/index.php/2016_AMC_12B_Problems">https://artofproblemsolving.com/wiki/index.php/2016_AMC_12B_Problems</a>. Accessed 10 July 2023.</p>
+			</div>
+		</div>
+		
+		<footer>
+		  Copyright &copy; 2023 University of Cincinnati, IT2040 <br>
+			<a href="mailto:liu2l8@mail.uc.edu">liu2l8@mail.uc.edu</a>
+		</footer>
+	
+	</body>
+</html>
+
